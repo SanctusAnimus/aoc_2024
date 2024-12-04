@@ -7,19 +7,6 @@ template <typename T> int sgn(T val) {
 	return (T(0) < val) - (val < T(0));
 }
 
-std::ostream& operator<<(std::ostream& os, const std::vector<int>& vec) {
-	os << "[";
-	for (size_t i = 0; i < vec.size(); ++i) {
-		os << vec[i];
-		if (i != vec.size() - 1) {
-			os << ", "; // Add a comma and space between elements
-		}
-	}
-	os << "]";
-	return os;
-}
-
-
 class Day2 : public Solution<Day2> {
 public:
 	Day2() {
@@ -130,7 +117,7 @@ public:
 		}
 
 		return { p1_total, p2_total };
-	};
+	}
 };
 
 #endif

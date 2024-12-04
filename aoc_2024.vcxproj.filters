@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Days">
+      <UniqueIdentifier>{4265b6c9-e567-4f38-80de-88645b92ae7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="aoc_2024.cpp">
@@ -21,8 +24,8 @@
     <ClCompile Include="solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="day_3.hpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="day_3.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -32,11 +35,14 @@
     <ClInclude Include="tuple_hash.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="day_1.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="day_1.cpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="day_2.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="day_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day_4.cpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

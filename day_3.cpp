@@ -12,7 +12,7 @@ public:
 		p1_expected = 157621318;
 		p2_expected = 79845780;
 
-		resolve_benchmark_tries = 100;
+		resolve_benchmark_tries = 500;
 	};
 
 	using Result_T = std::pair<long int, long int>;

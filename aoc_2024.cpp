@@ -1,25 +1,25 @@
 ﻿#include <iostream>
 
-#include "day_1.hpp"
-#include "day_2.hpp"
-#include "day_3.hpp"
-// #include "day_4.hpp"
-// #include "day_5.hpp"
-// #include "day_6.hpp"
-// #include "day_7.hpp"
-// #include "day_8.hpp"
-// #include "day_9.hpp"
-// #include "day_10.hpp"
-// #include "day_11.hpp"
-// #include "day_12.hpp"
-// #include "day_13.hpp"
-// #include "day_14.hpp"
-// #include "day_15.hpp"
-// #include "day_16.hpp"
-// #include "day_17.hpp"
-// #include "day_18.hpp"
-// #include "day_19.hpp"
-// #include "day_20.hpp"
+#include "day_1.cpp"
+#include "day_2.cpp"
+#include "day_3.cpp"
+#include "day_4.cpp"
+// #include "day_5.cpp"
+// #include "day_6.cpp"
+// #include "day_7.cpp"
+// #include "day_8.cpp"
+// #include "day_9.cpp"
+// #include "day_10.cpp"
+// #include "day_11.cpp"
+// #include "day_12.cpp"
+// #include "day_13.cpp"
+// #include "day_14.cpp"
+// #include "day_15.cpp"
+// #include "day_16.cpp"
+// #include "day_17.cpp"
+// #include "day_18.cpp"
+// #include "day_19.cpp"
+// #include "day_20.cpp"
 
 
 auto run_day(auto&& day_solution) {
@@ -54,7 +54,7 @@ void run_all() {
     std::cout << run_day(Day1());
     std::cout << run_day(Day2());
     std::cout << run_day(Day3());
-    // std::cout << run_day(Day4());
+    std::cout << run_day(Day4());
     // std::cout << run_day(Day5());
     // std::cout << run_day(Day6());
     // std::cout << run_day(Day7());
@@ -75,7 +75,7 @@ void run_all() {
 }
 
 void run_current_day() {
-    auto result = run_day(Day3());
+    auto result = run_day(Day4());
 
     table_header();
     table_separator();
@@ -86,7 +86,7 @@ void run_current_day() {
 
 int main()
 {
-    run_current_day();
-    // run_all();
+    // run_current_day();
+    run_all();
     return 0;
 }
