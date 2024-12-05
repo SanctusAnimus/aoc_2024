@@ -107,7 +107,7 @@ public:
 					p1_prev_number = parsed;
 				}
 			} while (parse_ptr < line_end);
-				
+
 			// if p1 is correct, p2 is automatically correct too
 			if (!p1_report_correct)
 				p2_report_correct = process_p2_bruteforce(nums);

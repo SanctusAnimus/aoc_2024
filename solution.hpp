@@ -1,4 +1,4 @@
-﻿#ifndef SOLUTION_HPP
+#ifndef SOLUTION_HPP
 #define SOLUTION_HPP
 #pragma once
 
@@ -73,10 +73,10 @@ public:
 
 			os << std::format(
 				"{}Day {:>2}{} ({}{:<6}{} tries) | {}{:>20}{} | {}{:>20}{} | {}{:>10.5f}{}ms | {:>10.5f}ms |\n",
-				COLORED(GREEN, node.day_num), 
+				COLORED(GREEN, node.day_num),
 				COLORED(MAGENTA, node.resolve_benchmark_tries),
-				COLORED(p1_color, node.answer.first), 
-				COLORED(p2_color, node.answer.second), 
+				COLORED(p1_color, node.answer.first),
+				COLORED(p2_color, node.answer.second),
 				// node.time_in_parsing, 
 				COLORED(mean_color, node.time_resolve_mean),
 				node.time_resolve_stddev
@@ -130,7 +130,7 @@ public:
 			Duration_T time_resolving = resolve_end - resolve_start;
 			resolve_durations.push_back(time_resolving.count());
 		}
-		
+
 		double time_took_total = std::accumulate(resolve_durations.begin(), resolve_durations.end(), 0.);
 		double time_mean = time_took_total / resolve_benchmark_tries;
 		double variance = variance_from(resolve_durations, time_mean, resolve_benchmark_tries);

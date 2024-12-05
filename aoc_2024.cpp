@@ -1,10 +1,10 @@
-﻿#include <iostream>
+#include <iostream>
 
-#include "day_1.cpp"
-#include "day_2.cpp"
-#include "day_3.cpp"
-#include "day_4.cpp"
-// #include "day_5.cpp"
+#include "day_1.hpp"
+#include "day_2.hpp"
+#include "day_3.hpp"
+#include "day_4.hpp"
+#include "day_5.hpp"
 // #include "day_6.cpp"
 // #include "day_7.cpp"
 // #include "day_8.cpp"
@@ -30,9 +30,9 @@ auto run_day(auto&& day_solution) {
 
 void table_header() {
     std::cout << std::format(
-        "                      | {}{:^20}{} | {}{:^20}{} | {}{:^12}{} | {}{:^12}{} |\n", 
+        "                      | {}{:^20}{} | {}{:^20}{} | {}{:^12}{} | {}{:^12}{} |\n",
         COLORED(BOLDCYAN, "P1"),
-        COLORED(BOLDCYAN, "P2"), 
+        COLORED(BOLDCYAN, "P2"),
         // COLORED(BOLDCYAN, "Parse"), 
         COLORED(BOLDCYAN, "Mean"),
         COLORED(BOLDCYAN, "StdDev")
@@ -55,7 +55,7 @@ void run_all() {
     std::cout << run_day(Day2());
     std::cout << run_day(Day3());
     std::cout << run_day(Day4());
-    // std::cout << run_day(Day5());
+    std::cout << run_day(Day5());
     // std::cout << run_day(Day6());
     // std::cout << run_day(Day7());
     // std::cout << run_day(Day8());
@@ -75,7 +75,7 @@ void run_all() {
 }
 
 void run_current_day() {
-    auto result = run_day(Day4());
+    auto result = run_day(Day5());
 
     table_header();
     table_separator();
@@ -84,9 +84,8 @@ void run_current_day() {
 }
 
 
-int main()
-{
-    // run_current_day();
-    run_all();
+int main() {
+    run_current_day();
+    // run_all();
     return 0;
 }

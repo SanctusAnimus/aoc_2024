@@ -13,7 +13,7 @@ public:
 		p1_expected = 2904518;
 		p2_expected = 18650129;
 
-		resolve_benchmark_tries = 500;
+		resolve_benchmark_tries = 200;
 	};
 
 	using Result_T = std::pair<int, int>;
@@ -36,7 +36,7 @@ public:
 	}
 
 	Result_T _get_solutions(SolutionInput_T solution_input) {
-		const int input_length = solution_input.size();
+		const size_t input_length = solution_input.size();
 
 		std::vector<int> left_side = {};
 		left_side.reserve(input_length);
@@ -57,7 +57,7 @@ public:
 
 		std::sort(left_side.begin(), left_side.end(), std::less<int>());
 		std::sort(right_side.begin(), right_side.end(), std::less<int>());
-		
+
 		int total_distance = 0;
 		int total_similarity_score = 0;
 

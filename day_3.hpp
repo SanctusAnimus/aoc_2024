@@ -78,7 +78,7 @@ public:
 					if (p2_enabled) p2 += result;
 				}
 			}
-		} while(cursor < size);
+		} while (cursor < size);
 
 		return { p1, p2 };
 	}
